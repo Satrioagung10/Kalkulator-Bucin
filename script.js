@@ -5,7 +5,7 @@ function calculate() {
   var angka = document.getElementById("results");
   var loveScore = Math.random() * 100;
   loveScore = Math.floor(loveScore);
-  if (name1 || name2 != "") {
+  if (name1 && name2 != "") {
     angka.innerHTML = loveScore + "%";
 
     if (loveScore >= 90) {
@@ -22,7 +22,7 @@ function calculate() {
         " Kamu " + name1 + " dan pasangan mu " + name2 + " masih asing ";
     }
   } else {
-    hasil.innerHTML = "Masukin nama nya dulu lah cuk";
+    hasil.innerHTML = "Masukin nama nya dulu lah cuk !!!";
     angka.innerHTML = "";
   }
 }
